@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DV Photography - Professional Photography</title>
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="">
+                    <img src="logo/logo-light.png" alt="Light Logo" class="logo-img light-logo ll" />
+                    <img src="logo/logo-dark.png" alt="Dark Logo" class="logo-img dark-logo ll" />
+
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button></li>
+                </ul>
+                <div class="hamburger" aria-label="Toggle menu" tabindex="0">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="slider" aria-label="Image Slider">
+            <div class="slide active" aria-hidden="false">
+                <img src="images/dslr.jpg" alt="Photographer with camera" />
+            </div>
+            <div class="slide" aria-hidden="true">
+                <img src="images\0DV_4408.JPG" alt="Outdoor portrait photography" />
+            </div>
+            <div class="slide" aria-hidden="true">
+                <img src="images\0DV_4371.JPG" alt="Wedding photography" />
+            </div>
+            <button class="prev" aria-label="Previous Slide">&#10094;</button>
+            <button class="next" aria-label="Next Slide">&#10095;</button>
+            <div class="dots" role="tablist" aria-label="Slide navigation">
+                <span class="dot active" role="tab" tabindex="0" aria-selected="true"></span>
+                <span class="dot" role="tab" tabindex="-1" aria-selected="false"></span>
+                <span class="dot" role="tab" tabindex="-1" aria-selected="false"></span>
+            </div>
+            <div class="slider-overlay">
+                <h1>Capture Your Moments</h1>
+                <p>Professional Photography Services to Treasure Your Memories Forever</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about container" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div>
+                <p>
+                    At DV Photography, we specialize in capturing beautiful moments through
+                    our expert lens. Whether it's a wedding, portrait, or event, we
+                    deliver stunning photos that tell your unique story.
+                </p>
+                <p>
+                    Our passionate team combines creativity with professional equipment
+                    to ensure every shot is perfect. Let us make your memories timeless.
+                </p>
+            </div>
+            <img src="logo/logo1.png" alt="Photographer working" />
+        </div>
+    </section>
+
+    <section class="services container" id="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="card" tabindex="0">
+                <i class="fas fa-camera-retro"></i>
+                <h3>Wedding Photography</h3>
+                <p>Capturing your special day with elegance and emotion.</p>
+            </div>
+            <div class="card" tabindex="0">
+                <i class="fas fa-portrait"></i>
+                <h3>Portraits</h3>
+                <p>Professional portraits that bring out your personality.</p>
+            </div>
+            <div class="card" tabindex="0">
+                <i class="fas fa-image"></i>
+                <h3>Event Photography</h3>
+                <p>Documenting memorable moments at any event or celebration.</p>
+            </div>
+            <div class="card" tabindex="0">
+                <i class="fa-solid fa-panorama"></i>
+                <!-- <i class="fas fa-landscape"></i> -->
+                <h3>Nature & Landscape</h3>
+                <p>Stunning outdoor shots showcasing natural beauty.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery container" id="gallery" aria-label="Gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="images/0DV_4350.JPG" alt="Black and white portrait" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_4379.JPG" alt="Black and white portrait" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_3575.JPG" alt="Black and white portrait" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_4335.JPG" alt="Bride and groom" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_4408.JPG" alt="Smiling child portrait" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_4374.JPG" alt="Photographer with camera" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_4410.JPG" alt="Mountain landscape" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+            <img src="images/0DV_4371.JPG" alt="Outdoor wedding shot" tabindex="0" role="button"
+                onclick="openLightbox(this.src)" onkeypress="if(event.key==='Enter') openLightbox(this.src)" />
+        </div>
+    </section>
+
+    <section class="contact container" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <!-- Contact Form -->
+            <form id="contact-form" aria-label="Contact form">
+                <input type="text" id="user_name" name="user_name" placeholder="Your Name" required
+                    aria-required="true" />
+                <input type="email" id="user_email" name="user_email" placeholder="Your Email" required
+                    aria-required="true" />
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required
+                    aria-required="true"></textarea>
+                <button type="submit">Send Message</button>
+                <div id="form-message" class="message" role="alert" aria-live="polite"></div>
+            </form>
+
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:chitrakoot7523@gmail.com">chitrakoot7523@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <a href="tel:+917523800858">+91 75238 00858</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Sitapur Road,<br>Shivrampur, Karwi,<br>Chitrakoot, Uttar Pradesh <br>Pincode – 210205</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="map" class="container" aria-label="Location map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086764353591!2d-122.41941528468193!3d37.77492977975937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808eabd3f399%3A0x6f0e62a1b485f9cd!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1695812345678!5m2!1sen!2sus"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Our Location"></iframe>
+    </section>
+
+    <footer>
+        <div class="social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2025 DV Photography. All rights reserved.</p>
+    </footer>
+
+    <!-- Lightbox modal -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close-lightbox" role="button" tabindex="0" aria-label="Close image preview">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded preview" />
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
